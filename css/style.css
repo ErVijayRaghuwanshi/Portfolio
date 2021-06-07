@@ -19,7 +19,8 @@ body::-webkit-scrollbar {
     position: sticky;
     background-color: rgba(0, 0, 0, 0.062);
     width: 100%;
-    top: 0px;
+    bottom: 0px;
+    /* margin-bottom: 10px; */
     
 
 }
@@ -28,7 +29,7 @@ body::-webkit-scrollbar {
     position: sticky;
     background: rgb(255, 0, 0);
     /* background: linear-gradient(30deg, rgb(26, 16, 212) 0%, rgba(255,0,52,1) 0%, rgb(214, 39, 74) 100%);    */
-    height: 5px;
+    height: 7px;
     width: 0%;
     border-radius: 0px 10px 10px 0px;
     
@@ -146,5 +147,5 @@ footer {
   
 .user {
     position: absolute;
-    right: 12vw;
+    right: 10%;
 }
