@@ -3,35 +3,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+.progress-container {
+    /* position: relative; */
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.062);
+    width: 100%;
+    top: 0px;
+
+
 }
 
 .progress-bar {
-    position: absolute;
+    position: sticky;
     background: rgb(255, 0, 0);
     /* background: linear-gradient(30deg, rgb(26, 16, 212) 0%, rgba(255,0,52,1) 0%, rgb(214, 39, 74) 100%);    */
     height: 5px;
     width: 0%;
-    border-radius: 0px 10px 5px 0px;
+    border-radius: 0px 10px 10px 0px;
+    
   }
+
 
 
 .container
 {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 200vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ffffffda;
     overflow: hidden;
 }
-
-#date{
-    z-index: -1;
+.container p {
+    color: rgb(255, 17, 176);
+    font-size: 10vw;
 }
+
 .heart{
     position: absolute;
     width: 40px;
@@ -61,5 +82,66 @@
     height: 100%;
     background: #e80202;
     border-radius: 50%;
-    box-shadow: -20px 0 20px rgba(0, 0, 0, .1);
+    box-shadow: -20px 0 20px rgba(0, 0, 0, 0.1);
+}
+.launch-date {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 0;
+    /* margin-top: 75vh; */
+    background-color: rgba(253, 115, 207, 0.445);
+    
+}
+#date {
+    margin: 10vw;
+    font-size: 7vw;
+    
+}
+
+footer {
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.801);
+    font-size: 25px;
+    margin: auto;
+    /* float: left; */
+    
+    
+}
+.fa {
+    position: absolute;
+    zoom: 1.5;
+    padding: 10px;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    /* text-align: center; */
+    text-decoration: none;
+    border-radius: 50%;
+    transition: .3s;
+    margin-left: 60vw;
+  }
+
+  
+  .fa-linkedin {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: aqua;
+  }
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+    background-color: azure;
+  }
+  
+.user {
+    position: absolute;
+    right: 12vw;
 }

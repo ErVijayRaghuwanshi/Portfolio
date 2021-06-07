@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a meta description sample. We can add up to 160 characters.">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,25 +13,55 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Er Vijay Raghuwanshi</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://kit.fontawesome.com/f59c85bf06.js" 
+    crossorigin="anonymous"></script> -->
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-        
-            <!-- Scroll Progress Bar -->
-            <div class="progress-container">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
-            <!-- Scroll Progress Bar -->
-            <div class="container">
-                <div class="heart"></div>
-            </div>
-        <!-- Typing Effect -->
-    <div class="comming-soon">
-        <!-- Typing Effect -->
-        
-        <p class="type" style="font-size: 5rem; color: rgb(255, 0, 0);">The Portfolio Website is Comming Soon!</p>
-        <p id="date" style="font-size: 7rem;"></p>
+
+    <!-- Scroll Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
     </div>
+    <!-- Scroll Progress Bar -->
+
+    <!-- This is heart anime.js container -->
+    <div class="container">
+        <div class="heart"></div>
+        <p>Coming soon!</p>
+    </div>
+    <!-- This is heart anime.js container -->
+
+    <div class="launch-date">
+        <p id="date"></p>
+    </div>
+
+
+    <!-- Typing Effect -->
+
+    <!-- <div class="comming-soon">
+        <p class="type" style="font-size: 5rem; color: rgb(255, 0, 0);">The Portfolio Website is Comming Soon!</p>
+    </div> -->
+    <!-- Typing Effect -->
+
+    <!-- linkedin -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <a target="_blank" href="https://in.linkedin.com/in/ervijayraghuwanshi" class="fa fa-linkedin"></a>
+        <p class="user">Vijay Raghuwanshi</p>
+        <!-- <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a> -->
+        <!-- <i class="fab fa-linkedin"></i> -->
+        <p class="copyright">Copyright © 2020-2021</p>
+        <!-- <p><a href="mailto:gvijay745@gmail.com">gvijay745@gmail.com</a></p> -->
+    </footer>
+    <!-- footer -->
+
+
     <script src="scripts/typed.js"></script>
     <script src="scripts/index.js"></script>
     <!-- JavaScript code for type.js -->
@@ -48,6 +78,7 @@
         });
     </script>
     <!-- JavaScript code for type.js -->
+
     <!-- JavaScript code for the heart anime.js background effect -->
     <script src="scripts/anime.min.js"></script>
     <script>
@@ -61,7 +92,7 @@
             anime({
                 targets: '.heart',
                 translateX: function () {
-                    return anime.random(-1920, 1920);
+                    return anime.random(-720, 1080);
                 },
                 translateY: function () {
                     return anime.random(-1080, 1080);
@@ -79,18 +110,18 @@
         }
         animateHearts()
     </script>
-<!-- Scroll Progress Bar -->
-<script>
-    function progressBarScroll() {
-        let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
-            height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
-            scrolled = (winScroll / height) * 100;
-        document.getElementById("progressBar").style.width = scrolled + "%";
-    }
+    <!-- Scroll Progress Bar -->
+    <script>
+        function progressBarScroll() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+                height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+                scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        }
 
-    window.onscroll = function () {
-        progressBarScroll();
-    };
+        window.onscroll = function () {
+            progressBarScroll();
+        };
     </script>
     <!-- Scroll Progress Bar -->
 </body>
