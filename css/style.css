@@ -129,7 +129,8 @@ footer {
     text-decoration: none;
     border-radius: 50%;
     transition: .3s;
-    margin-left: 60vw;
+    /* margin-left: 60vw; */
+    right: 0%;
   }
 
   
