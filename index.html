@@ -42,10 +42,12 @@
         .comming-soon {
             justify-content: center;
             text-align: center;
+            width: 100%;
+            height: 100px;
         }
     </style>
     <div class="comming-soon">
-        <p class="type" style="font-size: 5rem; color: rgb(255, 0, 0);">The Portfolio Website!</p>
+        <p class="type" style="font-size: 5rem; color: rgb(255, 0, 0);"></p>
     </div>
     <!-- Typing Effect -->
 
@@ -70,11 +72,12 @@
     <script>
         var typed = new Typed('.type', {
             strings: [
-                "The Portfolio Website is comming soon!",
-                "Stye tunind"
+                "The Portfolio Website is",
+                "Website is comming soon!",
+                "Stay tuned!"
             ],
             typeSpeed: 60,
-            backSpeed: 30,
+            backSpeed: 40,
             smartBackspace: true,
             loop: true
         });
