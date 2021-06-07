@@ -6,7 +6,9 @@
     scroll-behavior: smooth;
 
 }
-
+body {
+    height: 200vh;
+}
 body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -106,6 +108,7 @@ body::-webkit-scrollbar {
 
 footer {
     position: relative;
+    bottom: 0%;
     /* justify-content: center; */
     align-items: center;
     display: flex;
