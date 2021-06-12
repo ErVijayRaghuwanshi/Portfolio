@@ -22,31 +22,34 @@
 
 <body>
 
-   
+
 
     <!-- This is heart anime.js container -->
     <div class="container">
-        <div class="heart"></div>
-        <p>Coming soon!</p>
+        <!-- <div class="heart"></div> -->
+    </div>
+    <div class="coming-soon">
+        
+        <div class="text-over-heart">
+            <p>Coming Soon!</p>
+            <p id="date"></p>
+        </div>
     </div>
     <!-- This is heart anime.js container -->
 
-    <div class="launch-date">
-        <p id="date"></p>
-    </div>
 
 
     <!-- Typing Effect -->
 
     <style>
         .comming-soon {
-            /* cursor: none; */
-            margin-top: 50%;
             justify-content: center;
             text-align: center;
             align-items: center;
             width: 100%;
-            height: 400px;
+            height: 15vh;
+            padding: 10px;
+            opacity: .7;
         }
     </style>
     <div class="comming-soon">
@@ -55,16 +58,21 @@
     <!-- Typing Effect -->
 
     <!-- linkedin -->
-
+    
     <!-- footer -->
     <footer class="footer">
-        <a target="_blank" href="https://in.linkedin.com/in/ervijayraghuwanshi" class="fa fa-linkedin"></a>
+
+
+        <div class="copyright">
+            <p>Copyright © 2021 gvijay745@gmail.com</p>
+        </div>
+        <!-- <a target="_blank" href="https://in.linkedin.com/in/ervijayraghuwanshi" class="fa fa-linkedin"></a>
         <p class="user">Vijay Raghuwanshi</p>
-        <!-- <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a> -->
         <!-- <i class="fab fa-linkedin"></i> -->
-        <p class="copyright">Copyright © 2021</p>
-        <!-- <p><a href="mailto:gvijay745@gmail.com">gvijay745@gmail.com</a></p> -->
+        <!-- <p class="copyright">Copyright © 2021</p>
+        <p><a href="mailto:gvijay745@gmail.com">gvijay745@gmail.com</a></p> --> 
     </footer>
     <!-- footer -->
 
@@ -91,7 +99,7 @@
     <script src="scripts/anime.min.js"></script>
     <script>
         const container = document.querySelector('.container')
-        for (var i = 1; i <= 100; i++) {
+        for (var i = 1; i <= 50; i++) {
             const hearts = document.createElement('div');
             hearts.classList.add('heart');
             container.appendChild(hearts);
@@ -120,8 +128,8 @@
     </script>
     <!-- Scroll Progress Bar -->
 
-     <!-- Scroll Progress Bar -->
-     <div class="progress-container">
+    <!-- Scroll Progress Bar -->
+    <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
     </div>
     <!-- Scroll Progress Bar -->

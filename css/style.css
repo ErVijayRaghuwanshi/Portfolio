@@ -7,7 +7,7 @@
 
 }
 body {
-    height: 200vh;
+
 }
 body::-webkit-scrollbar {
     display: none;
@@ -15,20 +15,16 @@ body::-webkit-scrollbar {
     scrollbar-width: none;  /* Firefox */
   }
 
-
+  /* progress-container */
 .progress-container {
-    /* position: relative; */
-    position: sticky;
-    background-color: rgba(0, 0, 0, 0.062);
-    width: 100%;
-    bottom: 0px;
-    /* margin-bottom: 10px; */
-    
+    position: absolute;
+    bottom: -10px;
+    z-index: 100;
 
 }
 
 .progress-bar {
-    position: sticky;
+    position: relative;
     background: rgb(255, 0, 0);
     /* background: linear-gradient(30deg, rgb(26, 16, 212) 0%, rgba(255,0,52,1) 0%, rgb(214, 39, 74) 100%);    */
     height: 7px;
@@ -42,20 +38,31 @@ body::-webkit-scrollbar {
 .container
 {
     position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    overflow: hidden;
+    opacity: .6;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
-.container p {
+.text-over-heart {
+    position: absolute;
+    width: 100%;
+    top: 30vh;
     color: rgb(255, 17, 176);
-    font-size: 10vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
 }
-
+.text-over-heart p {
+    margin-top: 40px;
+    position: relative;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bolder;
+}
 .heart{
     position: absolute;
     width: 40px;
@@ -87,43 +94,18 @@ body::-webkit-scrollbar {
     border-radius: 50%;
     box-shadow: -20px 0 20px rgba(0, 0, 0, 0.1);
 }
-.launch-date {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    top: 0;
-    height: 70vh;
-    /* margin-top: 75vh; */
-    background-color: rgba(0, 0, 0, 0.062);
-    /* background-color: rgba(253, 115, 207, 0.075); */
-    
-}
-#date {
-    margin: 10%;
-    font-size: 7vw;
 
-    
-}
 
-footer {
-    position: relative;
-    bottom: 0%;
-    /* justify-content: center; */
-    align-items: center;
-    display: flex;
-    width: 100%;
-    height: 75px;
-    background-color: rgba(0, 0, 0, 0.801);
-    font-size: larger;
-    margin: auto;
-    padding-left: 10pz;
-    /* float: left; */
-    
-    
+
+
+footer .copyright {
+    background-color: #343a40;
+    padding: 10px;
+    text-align: center;
+    font: 1.2em sans-serif;
 }
 .fa {
-    position: absolute;
+    /* position: absolute; */
     /* zoom: 1.5; */
     padding: 10px;
     font-size: 35px;
