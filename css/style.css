@@ -26,6 +26,12 @@ body {
   background-color: #ffffff;
 }
  
+
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
 a {
   color: #0BCEAF;
   text-decoration: none;
@@ -106,7 +112,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .display-1{
-  font-size: 160px;
+  font-size: 9rem;
   font-weight: 1000;
   
 }
@@ -142,6 +148,9 @@ h1,h2,h3,h4,h5,h6,p{
     right: 0px;
     top: 30px;
    }
+  .display-1{
+    font-size: 100px;
+  }
 }
 /*===================== Progress Bar ====================*/
 
@@ -279,3 +288,5 @@ h1,h2,h3,h4,h5,h6,p{
     transform: translateY(-15px);
   }
 }
+
+
