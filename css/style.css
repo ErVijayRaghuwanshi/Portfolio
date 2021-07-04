@@ -1,5 +1,18 @@
+/* -------------color----------- */
+.matlab-color{
+  background-color: #c45400;
+}
 
-
+.html-color{
+  background-color: #d15b00;
+}
+.javascript-color{
+  background-color: #e0ad03;
+}
+.python-color{
+  background-color: #ffd343;
+}
+.
 *,
 *::before,
 *::after {
